@@ -15,11 +15,8 @@ import java.util.List;
  * 侧滑菜单文章主题列表Adapter
  */
 public class ArticleThemeListAdapter extends BaseAdapter {
-
     private List<String> themeList;
-
     private Context context;
-
     public ArticleThemeListAdapter(Context context, List<String> themeList) {
         this.context = context;
         this.themeList = themeList;

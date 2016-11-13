@@ -28,38 +28,24 @@ import java.util.List;
  * 图片轮播控件
  */
 public class Banner extends FrameLayout {
-
     private ViewPager viewPager;
-
     private BannerPagerAdapter adapter;
-
     private TextView topStoriesTitle;
-
     private List<ImageView> imageViews;
-
     private List<TopStories> topStoriesList;
-
     private List<View> dotList;
-
     private Handler handler;
-
     private Runnable runnable;
-
     private Context context;
-
     private OnBannerClickListener onBannerClickListener;
-
     //当前显示的图片索引
     private int currentItem = 0;
-
     public Banner(Context context) {
         this(context, null);
     }
-
     public Banner(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
-
     public Banner(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.context = context;

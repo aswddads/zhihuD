@@ -13,11 +13,8 @@ import com.tj.zhuhu.R;
  * 文章列表
  */
 public class ArticleListHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-
     public TextView articleTitle;
-
     public ImageView articleImage;
-
     public OnArticleItemClickListener itemClickListener;
 
     public ArticleListHolder(View itemView) {

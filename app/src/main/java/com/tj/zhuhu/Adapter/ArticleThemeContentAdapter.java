@@ -25,21 +25,13 @@ import java.util.List;
  * 特定文章主题下的文章列表Adapter
  */
 public class ArticleThemeContentAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-
     private ArticleTheme articleTheme;
-
     private List<Stories> storiesList;
-
     private LayoutInflater inflater;
-
     private Context context;
-
     private OnArticleItemClickListener clickListener;
-
     private int TYPE_TOP = 0;
-
     private int TYPE_ARTICLE = 1;
-
     public ArticleThemeContentAdapter(Context context) {
         this.context = context;
         init();

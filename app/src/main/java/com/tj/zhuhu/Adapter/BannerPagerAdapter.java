@@ -14,15 +14,11 @@ import java.util.List;
  * Banner Adapter
  */
 public class BannerPagerAdapter extends PagerAdapter {
-
     private List<ImageView> imageViews;
-
     private OnBannerClickListener onBannerClickListener;
-
     public BannerPagerAdapter(List<ImageView> imageViews) {
         this.imageViews = imageViews;
     }
-
     @Override
     public int getCount() {
         return imageViews.size();

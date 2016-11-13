@@ -26,18 +26,12 @@ import java.util.List;
  * 主页文章
  */
 public class MainFragment extends BaseFragment {
-
     //文章列表
     private RecyclerView recyclerView;
-
     private FloatingActionButton floatingActionButton;
-
     private ArticleListAdapter adapter;
-
     private OnLoadLatestArticleListener latestListener;
-
     private OnLoadBeforeArticleListener beforeListener;
-
     private boolean flag;
 
     @Override

@@ -28,27 +28,16 @@ import java.util.List;
  * 文章列表Adapter
  */
 public class ArticleListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-
     private List<Stories> storiesList;
-
     private LayoutInflater inflater;
-
     private Context context;
-
     private final int TYPE_TOP = 0;
-
     private final int TYPE_ARTICLE = 1;
-
     private final int TYPE_FOOTER = 2;
-
     public OnLoadTopArticleListener loadTopArticleListener;
-
     private OnSlideToTheBottomListener slideListener;
-
     private OnArticleItemClickListener clickListener;
-
     private ArticleListTopHolder articleListTopHolder;
-
     public ArticleListAdapter(Context context) {
         this.context = context;
         init();

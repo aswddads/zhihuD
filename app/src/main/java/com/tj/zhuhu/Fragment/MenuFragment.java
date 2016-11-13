@@ -23,15 +23,10 @@ import java.util.List;
 
 
 public class MenuFragment extends BaseFragment {
-
     private ArticleThemeListAdapter adapter;
-
     private TextView homePage;
-
     private ListView themesListView;
-
     private List<Others> themeList;
-
     private List<String> themeStringList;
 
     @Override

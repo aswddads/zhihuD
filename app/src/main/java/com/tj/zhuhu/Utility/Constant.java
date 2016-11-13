@@ -24,15 +24,10 @@ public class Constant {
     public final static String ArticleStart="http://news-at.zhihu.com/api/4/start-image/1080*1776";
     public final static String ArticleGradle="http://news-at.zhihu.com/api/4/version/android/2.3.0";
     public final static String ArticleContentUrl = "http://news-at.zhihu.com/api/4/news/";
-
     public final static String LatestArticleUrl = "http://news-at.zhihu.com/api/4/news/latest";
-
     public final static String ArticleThemesUrl = "http://news-at.zhihu.com/api/4/themes";
-
     public final static String BeforeArticleUrl = "http://news.at.zhihu.com/api/4/news/before/";
-
     public final static String ThemeContentUrl = "http://news-at.zhihu.com/api/4/theme/";
-
     public static ImageLoader getImageLoader() {
         return ImageLoader.getInstance();
     }

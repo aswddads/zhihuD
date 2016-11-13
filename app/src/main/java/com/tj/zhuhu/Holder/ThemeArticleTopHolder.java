@@ -11,11 +11,8 @@ import com.tj.zhuhu.R;
  * 主题文章顶部图片
  */
 public class ThemeArticleTopHolder extends RecyclerView.ViewHolder {
-
     public ImageView themeImage;
-
     public TextView themeDescription;
-
     public ThemeArticleTopHolder(View itemView) {
         super(itemView);
         themeImage = (ImageView) itemView.findViewById(R.id.themeImage);

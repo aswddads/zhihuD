@@ -19,16 +19,11 @@ import com.tj.zhuhu.R;
  * 主题文章
  */
 public class ThemeFragment extends BaseFragment {
-
     //文章列表
     private RecyclerView recyclerView;
-
     private ArticleThemeContentAdapter adapter;
-
     private OnLoadThemeContentListener listener;
-
     private int id;
-
     private boolean flag;
 
     @Override
