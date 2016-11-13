@@ -165,9 +165,6 @@ public class MainActivity extends AppCompatActivity {
         normalDialog.show();
     }
 
-
-
-
     private String readStream(InputStream in) {
         InputStreamReader inr;
         String result = "";
@@ -246,11 +243,6 @@ public class MainActivity extends AppCompatActivity {
         normalDialog.show();
     }
 
-
-
-
-
-
     //获取主页
     public void getHomepage() {
         MainFragment mainFragment = (MainFragment) getFragmentByTag("Fragment" + "-1");
@@ -265,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
         currentId = -1;
         isHomepage = true;
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("享受阅读的乐趣");
+            getSupportActionBar().setTitle("首页");
         }
     }
 
@@ -361,8 +353,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void joke(View view) {
-        Snackbar snackbar = Snackbar.make(refreshLayout, "其实并没有该功能，只是为了占个地方。。。", Snackbar.LENGTH_SHORT);
-        snackbar.getView().setBackgroundColor(Color.parseColor("#0099CC"));
+        Snackbar snackbar = Snackbar.make(refreshLayout, "哈哈...", Snackbar.LENGTH_SHORT);
+        snackbar.getView().setBackgroundColor(Color.parseColor("#009900"));
         snackbar.show();
     }
 
