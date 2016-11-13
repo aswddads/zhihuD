@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
                 toolbar, R.string.app_name, R.string.app_name);
         drawerLayout.addDrawerListener(drawerToggle);
-        new MyGradleAsyncTask().execute(Constant.URL2);
+        new MyGradleAsyncTask().execute(Constant.ArticleGradle);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         //drawerContent = (LinearLayout) findViewById(R.id.drawerContent);
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this,"查询",Toast.LENGTH_SHORT).show();
         }
         else if (id== R.id.main_toolbar_about){
-            new MyGradleAsyncTask().execute(Constant.URL2);
+            new MyGradleAsyncTask().execute(Constant.ArticleGradle);
         }
 
         return super.onOptionsItemSelected(item);

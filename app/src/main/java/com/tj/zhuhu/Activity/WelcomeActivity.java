@@ -23,7 +23,7 @@ import java.net.URL;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.tj.zhuhu.Utility.Constant.URL1;
+import static com.tj.zhuhu.Utility.Constant.ArticleStart;
 
 /**
  * Created by Jun on 16/11/12.
@@ -37,7 +37,7 @@ public class WelcomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
         //setContentView(R.layout.layout_main);
-        new MyAsyncTask().execute(URL1);
+        new MyAsyncTask().execute(ArticleStart);
         final Intent it = new Intent(WelcomeActivity.this, MainActivity.class); //你要转向的Activity
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {

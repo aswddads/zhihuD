@@ -21,8 +21,8 @@ public class Constant {
             "me\":\"开始游戏\"},{\"color\":1564695,\"thumbnail\":\"http:\\/\\/pic4.zhimg.com\\/eac535117ed895983bd2721f35d6e8dc.jpg\",\"description\":\"有音乐就很好\",\"id\":7,\"name\":\"音乐日报\"},{\"color\":6123007,\"thumbnail\":\"http:\\/\\/pic1.zhimg.com\\/a0f97c523c64e749c700b2ddc96cfd7c.jpg\",\"" +
             "description\":\"用技术的眼睛仔细看懂每一部动画和漫画\",\"id\":9,\"name\":\"动漫日报\"},{\"color\":16046124,\"thumbnail\":\"http:\\/\\/pic1.zhimg.com\\/bcf7d594f126e5ceb22691be32b2650a.jpg\",\"description\":\"关注体育，不吵架。\",\"id\":8,\"name\":\"体育日报\"}]}";
 
-    public final static String URL1="http://news-at.zhihu.com/api/4/start-image/1080*1776";
-    public final static String URL2="http://news-at.zhihu.com/api/4/version/android/2.3.0";
+    public final static String ArticleStart="http://news-at.zhihu.com/api/4/start-image/1080*1776";
+    public final static String ArticleGradle="http://news-at.zhihu.com/api/4/version/android/2.3.0";
     public final static String ArticleContentUrl = "http://news-at.zhihu.com/api/4/news/";
 
     public final static String LatestArticleUrl = "http://news-at.zhihu.com/api/4/news/latest";
