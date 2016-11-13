@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Zhi</string>
+    <string name="open" />
+    <string name="close" />
+    <string name="menu_index">首页</string>
+    <string name="menu_search">查询</string>
+    <string name="menu_notify">通知</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_register">登出</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_shuffle">随机看</string>
+</resources>
