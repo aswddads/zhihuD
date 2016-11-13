@@ -173,7 +173,7 @@ public class Banner extends FrameLayout {
     private List<TopStories> getDefaultBannerList() {
         List<TopStories> topStoriesList = new ArrayList<>();
         TopStories topStories = new TopStories();
-        topStories.setTitle("享受阅读的乐趣");
+        topStories.setTitle("首页");
         topStories.setImage("0");
         topStories.setId(0);
         topStoriesList.add(topStories);

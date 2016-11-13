@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("享受阅读的乐趣");
+            getSupportActionBar().setTitle("首页");
         }
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         refreshLayout = (SwipeRefreshLayout) findViewById(R.id.refreshLayout);

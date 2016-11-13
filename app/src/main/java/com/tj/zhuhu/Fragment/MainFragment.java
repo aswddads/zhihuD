@@ -73,7 +73,7 @@ public class MainFragment extends BaseFragment {
                 if (!flag) {
                     flag = true;
                 } else {
-                    hint(recyclerView, "已经是最新文章啦", Color.parseColor("#0099CC"));
+                    hint(recyclerView, "已经为您刷新过啦！", Color.parseColor("#0099CC"));
                 }
                 //加载最新文章成功后在后台再加载下一页
                 getBeforeArticleList();
@@ -83,7 +83,7 @@ public class MainFragment extends BaseFragment {
             public void onFailure() {
                 if (mActivity != null) {
 
-                    hint(recyclerView, "好奇怪，文章加载不来", Color.parseColor("#0099CC"));
+                    hint(recyclerView, "好奇怪，网络消失了哦！", Color.parseColor("#0099CC"));
 
                 }
                 stopRefresh();
@@ -101,7 +101,7 @@ public class MainFragment extends BaseFragment {
             @Override
             public void onFailure() {
                 if (mActivity != null) {
-                    hint(recyclerView, "好奇怪，文章加载不来", Color.parseColor("#0099CC"));
+                    hint(recyclerView, "好奇怪，网络消失了哦！", Color.parseColor("#0099CC"));
 
                 }
             }
@@ -119,7 +119,7 @@ public class MainFragment extends BaseFragment {
 
     public void getLatestArticleList() {
         if (!HttpUtil.isNetworkConnected(mActivity)) {
-            hint(recyclerView, "似乎没有连接网络？", Color.parseColor("#0099CC"));
+            hint(recyclerView, "网络好像消失了！", Color.parseColor("#0099CC"));
             stopRefresh();
             return;
         }
@@ -128,7 +128,7 @@ public class MainFragment extends BaseFragment {
 
     public void getBeforeArticleList() {
         if (!HttpUtil.isNetworkConnected(mActivity)) {
-            hint(recyclerView, "似乎没有连接网络？", Color.parseColor("#0099CC"));
+            hint(recyclerView, "网络好像消失了！", Color.parseColor("#0099CC"));
             return;
         }
         HttpUtil.getBeforeArticleList(getRootActivity().getDate(), beforeListener);

@@ -62,7 +62,7 @@ public class ArticleContentActivity extends AppCompatActivity {
         webView.getSettings().setAppCacheEnabled(true);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("享受阅读的乐趣");
+        toolbar.setTitle("首页");
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -96,9 +96,9 @@ public class ArticleContentActivity extends AppCompatActivity {
                 status = STATUS.WAIT_RETRY;
                 Snackbar snackbar;
                 if (!HttpUtil.isNetworkConnected(ArticleContentActivity.this)) {
-                    snackbar = Snackbar.make(webView, "似乎没有连接网络?", Snackbar.LENGTH_SHORT);
+                    snackbar = Snackbar.make(webView, "网络好像消失了哎！", Snackbar.LENGTH_SHORT);
                 } else {
-                    snackbar = Snackbar.make(webView, "好奇怪，文章加载不出来", Snackbar.LENGTH_SHORT);
+                    snackbar = Snackbar.make(webView, "好奇怪，网络有问题！", Snackbar.LENGTH_SHORT);
                 }
                 snackbar.getView().setBackgroundColor(Color.parseColor("#0099CC"));
                 snackbar.show();
@@ -117,7 +117,7 @@ public class ArticleContentActivity extends AppCompatActivity {
     public void hint(View view) {
         if (status == STATUS.WAIT_RETRY) {
             hintImage.setImageResource(R.drawable.load);
-            hintText.setText("正在加载");
+            hintText.setText("正在加载...");
             startAnimation(hintImage);
             status = STATUS.IN_LOAD;
             HttpUtil.getArticleContent(id, listener);

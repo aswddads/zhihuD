@@ -49,7 +49,7 @@ public class ThemeFragment extends BaseFragment {
     @Override
     protected void initData() {
         Bundle bundle = getArguments();
-        String title = "享受阅读的乐趣";
+        String title = "首页";
         if (bundle != null) {
             id = bundle.getInt("ID", 1);
             title = bundle.getString("Title");
@@ -68,14 +68,14 @@ public class ThemeFragment extends BaseFragment {
                 if (!flag) {
                     flag = true;
                 } else {
-                    hint(recyclerView, "已经是最新文章啦", Color.parseColor("#0099CC"));
+                    hint(recyclerView, "已经为您刷新过啦！", Color.parseColor("#0099CC"));
                 }
             }
 
             @Override
             public void onFailure() {
                 if (mActivity != null) {
-                    hint(recyclerView, "好奇怪，文章加载不来", Color.parseColor("#0099CC"));
+                    hint(recyclerView, "好奇怪，网络好像消失了哦！", Color.parseColor("#0099CC"));
                 }
                 stopRefresh();
             }
@@ -92,7 +92,7 @@ public class ThemeFragment extends BaseFragment {
     public void refreshData() {
         if (!HttpUtil.isNetworkConnected(mActivity)) {
             stopRefresh();
-            hint(recyclerView, "似乎没有连接网络？", Color.parseColor("#0099CC"));
+            hint(recyclerView, "网络消失了！", Color.parseColor("#0099CC"));
             return;
         }
         HttpUtil.getArticleListByTheme(id, listener);
